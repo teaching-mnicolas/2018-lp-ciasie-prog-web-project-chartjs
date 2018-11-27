@@ -6,7 +6,7 @@
         var myChart = new Chart(ctx, {type: 'radar',
     data: {
         
-        labels: ["PV", "Attaque", "Défense", "Attaque spéciale", "Défense spéciale", "Vitesse"],
+        labels: ["PV", "Attaque", "Defense", "Attaque speciale", "Defense speciale", "Vitesse"],
         datasets: [{
             label: 'Pikachu',
             data: [35, 55, 40, 50, 50, 90],
@@ -29,18 +29,7 @@
             borderWidth: 1
         }
     ]
-    },
-    options: {
-        scales: {
-            
-            yAxes: [{
-                ticks: {
-                   min: 0,
-                   max:100,
-                   stepsize:1
-                }
-            }]
-        }
-    }});
+    }
+    });
     </script>
 </html>
