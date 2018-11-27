@@ -3,9 +3,9 @@
     <canvas id="doughnutChart"></canvas>
     <script src="../node_modules/Chart.js/dist/Chart.js"></script>
     <script>
-        var ctx1 = document.getElementById("pieChart");
-        var ctx2 = document.getElementById("doughnutChart");
-        var pieChart = new Chart(ctx1, {type: 'pie',
+        let ctx1 = document.getElementById("pieChart");
+        let ctx2 = document.getElementById("doughnutChart");
+        let pieChart = new Chart(ctx1, {type: 'pie',
     data: {
         
         labels: ["Red", "Green", "Blue"],
