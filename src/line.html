@@ -1,12 +1,14 @@
-
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'bar',
+<html>
+    <canvas id="myChart"></canvas>
+    <script src="../node_modules/Chart.js/dist/Chart.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {type: 'line',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["19 NOV", "20 NOV", "21 NOV", "23 NOV", "26 NOV"],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'NASDAQ: AAPL',
+            data: [190, 178.33, 179.61, 174.72, 174.24],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -30,9 +32,10 @@ var myChart = new Chart(ctx, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero:true
+                    
                 }
             }]
         }
-    }
-});
+    }});
+    </script>
+</html>
