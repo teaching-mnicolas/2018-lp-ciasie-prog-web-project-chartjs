@@ -1,0 +1,58 @@
+<html>
+    <canvas id="myChart"></canvas>
+    <script src="../node_modules/Chart.js/dist/Chart.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {type: 'polarArea',
+    data: {
+        
+        labels: ["Normal", "Feu", "Eau", "Plante", "Electrique", "Vol","Glace","Combat","Poison","Sol","Psy","Insecte",
+    "Roche","Spectre","Dragon","Tenebre","Acier"],
+        datasets: [{
+            label: 'Different type',
+            data: [97, 48, 109, 75, 39, 82,29,40,57,59,68,63,47,27,29,37,37],
+            backgroundColor: [
+                'rgba(169, 184, 193, 0.2)',
+                'rgba(193, 87, 80, 0.2)',
+                'rgba(88, 144, 233, 0.2)',
+                'rgba(61, 209, 78, 0.2)',
+                'rgba(236, 232, 52, 0.2)',
+                'rgba(137, 142, 197, 0.2)',
+                'rgba(87, 255, 244, 0.2)',
+                'rgba(184, 133, 31  , 0.2)',
+                'rgba(173, 31, 184  , 0.2)',
+                'rgba(235, 186, 33  , 0.2)',
+                'rgba(247, 81, 247  , 0.2)',
+                'rgba(27, 188, 136  , 0.2)',
+                'rgba(143, 149, 17  , 0.2)',
+                'rgba(73, 21, 141  , 0.2)',
+                'rgba(162, 125, 211  , 0.2)',
+                'rgba(61, 56, 67  , 0.2)',
+                'rgba(158, 150, 170  , 0.2)'
+            ],
+            borderColor: [
+            'rgba(169, 184, 193, 1)',
+                'rgba(193, 87, 80, 1)',
+                'rgba(88, 144, 233, 1)',
+                'rgba(61, 209, 78, 1)',
+                'rgba(236, 232, 52, 1)',
+                'rgba(137, 142, 197, 1)'
+            ],
+            borderWidth: 1
+        }
+    ]
+    },
+    options: {
+        scales: {
+            
+            yAxes: [{
+                ticks: {
+                   min: 0,
+                   max:100,
+                   stepsize:1
+                }
+            }]
+        }
+    }});
+    </script>
+</html>

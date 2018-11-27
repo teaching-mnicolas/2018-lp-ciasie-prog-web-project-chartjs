@@ -5,6 +5,7 @@
         var ctx = document.getElementById("myChart");
         var myChart = new Chart(ctx, {type: 'radar',
     data: {
+        
         labels: ["PV", "Attaque", "Défense", "Attaque spéciale", "Défense spéciale", "Vitesse"],
         datasets: [{
             label: 'Pikachu',
@@ -17,7 +18,7 @@
             ],
             borderWidth: 1
         },{
-            label: 'évoli',
+            label: 'Evoli',
             data: [65, 75, 70, 65, 85, 75],
             backgroundColor: [
                 'rgba(54, 162, 235, 0.2)'
@@ -31,9 +32,12 @@
     },
     options: {
         scales: {
+            
             yAxes: [{
                 ticks: {
-                    beginAtZero:true
+                   min: 0,
+                   max:100,
+                   stepsize:1
                 }
             }]
         }
